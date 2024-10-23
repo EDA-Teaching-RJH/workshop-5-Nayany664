@@ -100,7 +100,7 @@ def run_mission():
 def repair_system(): 
 
 # TODO: Implement system repair functionality
-	global action
+	global action 
 def add_crew_member(): 
 # TODO: Implement functionality to add a new crew member 
 	global action
