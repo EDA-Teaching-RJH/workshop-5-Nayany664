@@ -101,7 +101,7 @@ def repair_system():
 
 # TODO: Implement system repair functionality
 	print("Your ship has been damaged")
-	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = -12
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] -= 12
 def add_crew_member(): 
 # TODO: Implement functionality to add a new crew member
 	print("You have a new crew member")
@@ -113,9 +113,9 @@ def handle_random_event():
 def use_resource(resource, amount): 
 # TODO: Implement resource usage logic 
 	print("You have used a resource")
-	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = -30
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] -= 30
 def replenish_resources(): 
 # TODO: Implement resource replenishment logic 
 	print("Replenish your resources ")
-	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = +100
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] += 100
 main()
