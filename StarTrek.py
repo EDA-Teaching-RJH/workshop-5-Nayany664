@@ -40,7 +40,8 @@ def main():
 	elif action == "3": 
 		add_crew_member() 
 	elif action == "4": 
-		print(f"Simulation ended. Final score: {score}") break 
+		print(f"Simulation ended. Final score: {score}")
+		exit 
 	else: 
 		print("Invalid action. Please try again.") 
 		
