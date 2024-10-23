@@ -52,10 +52,12 @@ def main():
 
 def display_status(): 
 # TODO: Implement function to display ship status, resources, and crew 
-
+	while ship !=0 :
+		print(ship["system"] ["resources"] ["crew"])
 def get_user_action(): 
 # TODO: Implement function to get and return user's chosen action 
-
+	global action #get the thing from main (this is just local)
+	action = int(input("Choose a number from 1-4 to do an action."))
 def run_mission(): 
 	mission_type = random.choice(MISSION_TYPES) 
 	print(f"\nNew mission: {mission_type}") 
@@ -65,17 +67,17 @@ def run_mission():
 def repair_system(): 
 
 # TODO: Implement system repair functionality
- 
+	2
 def add_crew_member(): 
 # TODO: Implement functionality to add a new crew member 
-
+	3
 def handle_random_event():
 # TODO: Implement random events that can occur during the simulation 
-
+	1
 def use_resource(resource, amount): 
 # TODO: Implement resource usage logic 
-
+	4
 def replenish_resources(): 
 # TODO: Implement resource replenishment logic 
-
+	1
 main()
