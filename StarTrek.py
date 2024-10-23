@@ -100,17 +100,22 @@ def run_mission():
 def repair_system(): 
 
 # TODO: Implement system repair functionality
-	global action 
+	print("Your ship has been damaged")
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = -12
 def add_crew_member(): 
-# TODO: Implement functionality to add a new crew member 
-	global action
+# TODO: Implement functionality to add a new crew member
+	print("You have a new crew member")
+	ship["crew"] ["Wesley"] = "Acting Esign" #Adds a new crew member
 def handle_random_event():
 # TODO: Implement random events that can occur during the simulation 
-	global action
+	mission_type = random.choice(MISSION_TYPES) 
+	print(f"\nNew mission: {mission_type}")
 def use_resource(resource, amount): 
 # TODO: Implement resource usage logic 
-	global action
+	print("You have used a resource")
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = -30
 def replenish_resources(): 
 # TODO: Implement resource replenishment logic 
-	global action
+	print("Replenish your resources ")
+	ship["systems"] ["engines"] ["weapons"] ["shields"] ["sensors"] = +100
 main()
