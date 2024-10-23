@@ -67,24 +67,34 @@ def run_mission():
 	match mission_type :
 		case "Exploration" :
 			ship ["crew"] ["Picard"]
-			ship["systems"] ["shields"]
-			ship["resources"] ["energy"]
+			ship["systems"] ["shields"] = 60 #how much left
+			ship["resources"] ["energy"] = 780 #how much left
+			score += 5 #this is what their score increases by
+			print("Score: ", score)
 		case "Diplomacy" :
 			ship ["crew"] ["Riker"]
-			ship["systems"] ["weapons"]
-			ship["resources"] ["energy"]
+			ship["systems"] ["weapons"] = 50
+			ship["resources"] ["energy"] = 780
+			score += 8 #this is what their score increases by
+			print("Score: ", score)
 		case "Combat" :
 			ship ["crew"] ["Data"]
-			ship["systems"] ["engines"]
-			ship["resources"] ["energy"]
+			ship["systems"] ["engines"] = 65
+			ship["resources"] ["energy"] = 780
+			score += 4 #this is what their score increases by
+			print("Score: ", score)
 		case "Rescue" :
-			ship ["crew"] ["Worf"] 
-			ship["systems"] ["sensors"]
-			ship["resources"] ["torpedoes"]
+			ship ["crew"] ["Worf"] ["La Forge"]
+			ship["systems"] ["sensors"] = 50
+			ship["resources"] ["torpedoes"] = 650
+			score += 6 #this is what their score increases by
+			print("Score: ", score)
 		case "System Research" :
-			ship ["crew"] ["Crusher"]
-			ship["systems"] ["shields"]
-			ship["resources"] ["torpedoes"]									
+			ship ["crew"] ["Crusher"] ["Troi"]
+			ship["systems"] ["shields"] = 60
+			ship["resources"] ["torpedoes"]	= 650
+			score += 7 #this is what their score increases by
+			print("Score: ", score)								
 
 
 def repair_system(): 
