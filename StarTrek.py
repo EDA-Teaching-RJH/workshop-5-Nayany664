@@ -100,17 +100,17 @@ def run_mission():
 def repair_system(): 
 
 # TODO: Implement system repair functionality
-	2
+	global action
 def add_crew_member(): 
 # TODO: Implement functionality to add a new crew member 
-	3
+	global action
 def handle_random_event():
 # TODO: Implement random events that can occur during the simulation 
-	1
+	global action
 def use_resource(resource, amount): 
 # TODO: Implement resource usage logic 
-	4
+	global action
 def replenish_resources(): 
 # TODO: Implement resource replenishment logic 
-	1
+	global action
 main()
