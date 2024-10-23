@@ -63,6 +63,28 @@ def run_mission():
 	print(f"\nNew mission: {mission_type}") 
 	# TODO: Implement mission logic for different mission types 
 	# Return the score earned from the mission 
+	match mission_type :
+		case "Exploration" :
+			ship ["crew"] ["Picard"]
+			ship["systems"] ["shields"]
+			ship["resources"] ["energy"]
+		case "Diplomacy" :
+			ship ["crew"] ["Riker"]
+			ship["systems"] ["weapons"]
+			ship["resources"] ["energy"]
+		case "Combat" :
+			ship ["crew"] ["Data"]
+			ship["systems"] ["engines"]
+			ship["resources"] ["energy"]
+		case "Rescue" :
+			ship ["crew"] ["Worf"] 
+			ship["systems"] ["sensors"]
+			ship["resources"] ["torpedoes"]
+		case "System Research" :
+			ship ["crew"] ["Crusher"]
+			ship["systems"] ["shields"]
+			ship["resources"] ["torpedoes"]									
+
 
 def repair_system(): 
 
